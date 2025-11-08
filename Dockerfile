@@ -1,10 +1,10 @@
-# Use an official Python runtime as a parent image (install all the bins from the debian os on which the image python:3.8-slim is dependent on )
-FROM python:3.8-slim
+# Use an official Python runtime as a parent image (install all the bins from the debian os on which the image python:3.10-slim is dependent on )
+FROM python:3.10-slim
 
 # Set the working directory in the container, creates a folder /app
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app
+# Copy the current directory contents into the container at /app folder
 COPY . /app
 
 # Install any needed packages specified in requirements.txt
